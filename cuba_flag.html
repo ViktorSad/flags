@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuba flag</title>
+    <style>
+      body {
+        /* */
+        display: flex;
+        justify-content: center;
+      }
+      .flag {
+        display: grid;
+        flex-direction: column;
+        background-color: yellow;
+        height: 20vw;
+        width: 30vw;
+        border: 1px black solid;
+        margin: 10px;
+      }
+      .effect1 {
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+      }
+      .triangle {
+        display: grid;
+        justify-content: center;
+        background-color: brown;
+        height: 20vw;
+        width: 15vw;
+        clip-path: polygon(0 0, 0 100%, 100% 50%);
+        position: absolute;
+      }
+      .blue_line_cuba {
+        background-color: blue;
+        display: grid;
+        height: 4vw;
+        width: 30vw;
+      }
+      .blue_line_cuba_border {
+        display: grid;
+        align-items: center;
+        background-color: blue;
+        height: 4vw;
+        width: 30vw;
+        border-top: 4vw white solid;
+        border-bottom: 4vw white solid;
+      }
+      .star_cuba {
+        display: grid;
+        height: 4.5vw;
+        width: 4.5vw;
+        background-color: white;
+        align-self: center;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          83% 90%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <!-- just a comment -->
+    <div class="flag effect1">
+      <div class="blue_line_cuba"></div>
+      <div class="blue_line_cuba_border"></div>
+      <div class="blue_line_cuba"></div>
+      <div class="triangle"><div class="star_cuba"></div></div>
+    </div>
+  </body>
+</html>
